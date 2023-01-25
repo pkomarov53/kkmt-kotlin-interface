@@ -1,9 +1,8 @@
 class EuroConverter: CurrencyConverter {
 
-    override val currencyNode: String
+    override val currencyCode: String
         get() = "EUR"
 
-    override fun convertRub(cashAmount: Double): Double {
-        return (cashAmount * 75.81)
-    }
+    override fun convertRub(cashAmount: Double) = println("$cashAmount RUB = " +
+            "${(cashAmount * 75.47).toFloat()} ${this.currencyCode}\t")
 }

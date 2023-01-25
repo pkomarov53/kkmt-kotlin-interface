@@ -1,6 +1,6 @@
 interface CurrencyConverter {
 
-    val currencyNode: String
+    val currencyCode: String
 
-    fun convertRub(cashAmount: Double): Double
+    fun convertRub(cashAmount: Double)
 }

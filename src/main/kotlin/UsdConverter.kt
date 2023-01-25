@@ -1,8 +1,7 @@
 class UsdConverter: CurrencyConverter {
 
-    override val currencyNode: String = "USD"
+    override val currencyCode: String = "USD"
 
-    override fun convertRub(cashAmount: Double): Double {
-        return (cashAmount * 69.32)
-    }
+    override fun convertRub(cashAmount: Double) = println("$cashAmount RUB = " +
+            "${(cashAmount * 69.32).toFloat()} ${this.currencyCode}\t")
 }
